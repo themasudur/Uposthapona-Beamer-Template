@@ -1,0 +1,93 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+
+\mode<presentation>
+{
+    % For more themes, color themes and font themes, see:
+    % https://deic.uab.cat/~iblanes/beamer_gallery/
+    \usetheme{default}      % or try AnnArbor, Bergen, Madrid, ...
+    \usecolortheme{default} % or try beaver, crane, wolverine, ...
+    \usefonttheme{default}  % or try serif, structurebold, ...
+    \setbeamertemplate{caption}[numbered]
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{footline}[frame number]
+} 
+
+\title{Your Presentation Title}
+\subtitle{Subtitle goes here}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Introduction}
+\begin{itemize}
+    \item Your introduction goes here!
+    \item Use \texttt{itemize} to organize your main points.
+\end{itemize}
+
+\vskip 1cm
+
+\begin{block}{Examples}
+Some examples of commonly used commands and features are included, to help you get started.
+\end{block}
+
+\end{frame}
+
+\section{Some \LaTeX{} Examples}
+
+\subsection{Tables and Figures}
+
+\begin{frame}{Tables and Figures}
+\begin{itemize}
+\item Use \texttt{tabular} for basic tables --- see Table~\ref{tab:widgets}, for example.
+\item You can upload a figure (JPEG, PNG or PDF) using the files menu. 
+\item To include it in your document, use the \texttt{includegraphics} command (see the comment below in the source code).
+\end{itemize}
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+\end{frame}
+
+\begin{frame}{Figures}
+Commands to include a figure:
+\begin{figure}
+    \includegraphics[width=3cm]{example-image-a}
+    \caption{\label{fig:your-figure}Caption goes here.}
+\end{figure}
+\end{frame}
+
+\subsection{Mathematics}
+
+\begin{frame}{Mathematics}
+
+\end{frame}
+
+\setbeamertemplate{footline}{} % Last slide
+\begin{frame}
+\centering
+\Huge Thank YOU for listening.\\
+\vskip30pt
+\Huge Feel free to ask questions. \\
+\end{frame}
+
+\end{document}
